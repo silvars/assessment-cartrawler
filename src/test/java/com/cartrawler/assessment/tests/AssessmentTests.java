@@ -3,11 +3,12 @@ package com.cartrawler.assessment.tests;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.junit.Test;
 
 import com.cartrawler.assessment.car.CarResult;
+import com.cartrawler.assessment.enums.SuppliersEnum;
 import com.cartrawler.assessment.filter.AssessmentFilter;
 import com.cartrawler.assessment.filter.impl.AssessmentFilterImpl;
+import com.cartrawler.assessment.view.Display;
 
 import junit.framework.TestCase;
 
@@ -24,7 +25,6 @@ public class AssessmentTests extends TestCase {
     }
 
 
-    @Test
     public void testSuccessAllAvaibleCarsWithNoFilter() {
 
         log.info("INI: testSuccessAllAvaibleCarsWithNoFilter");
@@ -41,7 +41,6 @@ public class AssessmentTests extends TestCase {
 
 
 
-    @Test
     public void testSuccessRemoveAnyDuplicatesFromList() {
 
         log.info("INI: testSuccessRemoveAnyDuplicatesFromList");
@@ -52,6 +51,32 @@ public class AssessmentTests extends TestCase {
         assertFalse(carsSizeWithNoFilter.equals(carsSizeFiltered));
 
         log.info("END: testSuccessRemoveAnyDuplicatesFromList");
+
+    }
+
+    public void testSuccessSortCorporateCars() {
+
+        log.info("INI: testSuccessSortCorporateCars");
+
+        List<CarResult> cars = assessmentFilter.getCarsCorporateSorted();
+
+        assertEquals(cars.get(0).getSupplierName(), SuppliersEnum.AVIS);
+
+        log.info("END: testSuccessSortCorporateCars");
+
+    }
+    
+    
+    public void testSuccessSortCarTypes() {
+
+        log.info("INI: testSuccessSortCarTypes");
+
+        List<CarResult> cars = assessmentFilter.getCarsSortedByType();
+        
+        new Display().render(cars);
+
+
+        log.info("END: testSuccessSortCarTypes");
 
     }
 

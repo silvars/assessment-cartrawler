@@ -11,6 +11,8 @@ public interface AssessmentFilter {
 
     public Set<CarResult> getCarsWithoutDuplications();
 
+    public List<CarResult> getCarsCorporateSorted();
 
+    public List<CarResult> getCarsSortedByType();
 
 }

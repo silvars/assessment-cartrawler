@@ -13,7 +13,6 @@ public class CarResult implements Comparable<CarResult> {
     private final FuelPolicy fuelPolicy;
 
 
-
     public CarResult(String description, SuppliersEnum supplierName, String sipp, double cost,
             FuelPolicy fuelPolicy) {
         this.description = description;
@@ -102,5 +101,6 @@ public class CarResult implements Comparable<CarResult> {
         return this.description.compareTo(o.description);
     }
 
-
 }
+
+
