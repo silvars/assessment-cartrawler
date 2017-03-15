@@ -1,20 +1,23 @@
-package com.cartrawler.assessment.car;
+package com.cartrawler.assessment.to;
+
+import java.io.Serializable;
 
 import org.apache.commons.lang3.StringUtils;
 
 import com.cartrawler.assessment.enums.FuelPolicy;
 import com.cartrawler.assessment.enums.SuppliersEnum;
 
-public class CarResult implements Comparable<CarResult> {
+public class CarResultTO implements Serializable, Comparable<CarResultTO> {
+    private static final long serialVersionUID = 3984170778063234014L;
     private final String description;
     private final SuppliersEnum supplierName;
     private final String sippCode;
     private final Double rentalCost;
     private final FuelPolicy fuelPolicy;
 
-
-    public CarResult(String description, SuppliersEnum supplierName, String sipp, double cost,
+    public CarResultTO(String description, SuppliersEnum supplierName, String sipp, double cost,
             FuelPolicy fuelPolicy) {
+        super();
         this.description = description;
         this.supplierName = supplierName;
         this.sippCode = sipp;
@@ -52,7 +55,6 @@ public class CarResult implements Comparable<CarResult> {
         sb.append(" ").append(" ");
         sb.append(this.fuelPolicy);
 
-
         return sb.toString();
     }
 
@@ -75,7 +77,7 @@ public class CarResult implements Comparable<CarResult> {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        CarResult other = (CarResult) obj;
+        CarResultTO other = (CarResultTO) obj;
         if (description == null) {
             if (other.description != null)
                 return false;
@@ -97,7 +99,7 @@ public class CarResult implements Comparable<CarResult> {
     }
 
 
-    public int compareTo(CarResult o) {
+    public int compareTo(CarResultTO o) {
         return this.description.compareTo(o.description);
     }
 
