@@ -139,5 +139,23 @@ public class AssessmentTests extends TestCase {
     
     
 
+    public void testSuccessBelowAverageCost() {
+
+        log.info("\n\nINI: testSuccessRemovePricedAbove\n\n");
+        
+        log.info("\n\nEXE: CORPORATE AND NON-CORPORATE \n\n");
+        List<CarResultTO> both =
+                assessmentFilter.getCarsBelowAverageCost(SupplierType.BOTH);
+
+        log.info("\n\nEND: testSuccessRemovePricedAbove\n\n");
+
+    }
+    
+    
+    
+    
+    
+    
+
 
 }

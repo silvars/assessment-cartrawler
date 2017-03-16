@@ -2,10 +2,12 @@ package com.cartrawler.assessment.filter.impl;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.cartrawler.assessment.comparators.Comparators;
+import com.cartrawler.assessment.enums.CarGroup;
 import com.cartrawler.assessment.enums.SupplierType;
 import com.cartrawler.assessment.enums.SuppliersEnum;
 import com.cartrawler.assessment.filler.AssessmentFiller;
@@ -65,6 +67,21 @@ public class AssessmentFilterImpl extends AssessmentFiller implements Assessment
         return car;
 
 
+    }
+
+    @Override
+    public List<CarResultTO> getCarsBelowAverageCost(SupplierType supplierType) {
+
+        // calculating avarage using all cars with lambda
+        Map<CarGroup, Double> avarageCostByGroup =
+                this.getAllCars().stream().collect(Collectors.groupingBy(CarResultTO::getCarGroup,
+                        Collectors.averagingDouble(CarResultTO::getRentalCost)));
+
+
+        // filtering above avarage
+        return this.getCarsSortedLowToHighPriceByType(supplierType).stream()
+                .filter(c -> c.getRentalCost() > avarageCostByGroup.get(c.getCarGroup()))
+                .collect(Collectors.toList());
     }
 
 

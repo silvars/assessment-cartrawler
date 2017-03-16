@@ -15,7 +15,9 @@ public interface AssessmentFilter {
     public List<CarResultTO> getCarsCorporateSorted();
 
     public List<CarResultTO> getCarsSortedByType(final SupplierType supplierType);
-    
+
     public List<CarResultTO> getCarsSortedLowToHighPriceByType(final SupplierType supplierType);
+
+    public List<CarResultTO> getCarsBelowAverageCost(SupplierType supplierType);
 
 }

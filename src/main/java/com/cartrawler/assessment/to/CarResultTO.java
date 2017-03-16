@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import org.apache.commons.lang3.StringUtils;
 
+import com.cartrawler.assessment.enums.CarGroup;
 import com.cartrawler.assessment.enums.FuelPolicy;
 import com.cartrawler.assessment.enums.SuppliersEnum;
 
@@ -101,6 +102,10 @@ public class CarResultTO implements Serializable, Comparable<CarResultTO> {
 
     public int compareTo(CarResultTO o) {
         return this.description.compareTo(o.description);
+    }
+
+    public CarGroup getCarGroup() {
+        return CarGroup.valueOfByCharGroup(this.sippCode.charAt(0));
     }
 
 }
