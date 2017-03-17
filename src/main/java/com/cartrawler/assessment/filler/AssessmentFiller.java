@@ -74,8 +74,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Galaxy Diesel", SuppliersEnum.CENTAURO, "FVMD", 148.23d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.CENTAURO, "SVMR", 163.73d,
-                FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.CENTAURO, "SVMR",
+                163.73d, FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Volkswagen Touran", SuppliersEnum.CENTAURO, "IVMR", 72.29d,
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Volkswagen Touran Diesel", SuppliersEnum.CENTAURO, "IVMD", 80.43d,
@@ -84,8 +84,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Citroen Berlingo", SuppliersEnum.CENTAURO, "CMMV", 65.15d,
                 FuelPolicy.FULLFULL));
-        CARS.add(new CarResultTO("Ford Focus Estate Diesel", SuppliersEnum.CENTAURO, "CWMD", 100.27d,
-                FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("Ford Focus Estate Diesel", SuppliersEnum.CENTAURO, "CWMD",
+                100.27d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Volkswagen Golf", SuppliersEnum.CENTAURO, "CDMR", 58.77d,
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Ford Fiesta Diesel", SuppliersEnum.CENTAURO, "EDMD", 56.77d,
@@ -104,12 +104,12 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Ford Galaxy Diesel", SuppliersEnum.CENTAURO, "FVMD", 183.66d,
                 FuelPolicy.FULLFULL));
-        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.CENTAURO, "SVMR", 199.62d,
-                FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.CENTAURO, "SVMR",
+                199.62d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Volkswagen Touran", SuppliersEnum.CENTAURO, "IVMR", 105.45d,
                 FuelPolicy.FULLFULL));
-        CARS.add(new CarResultTO("Volkswagen Touran Diesel", SuppliersEnum.CENTAURO, "IVMD", 113.83d,
-                FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("Volkswagen Touran Diesel", SuppliersEnum.CENTAURO, "IVMD",
+                113.83d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Peugeot 107", SuppliersEnum.CENTAURO, "MCMR", 40.82d,
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Citroen Berlingo", SuppliersEnum.CENTAURO, "CMMV", 34.11d,
@@ -134,8 +134,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Galaxy Diesel", SuppliersEnum.CENTAURO, "FVMD", 152.63d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.CENTAURO, "SVMR", 168.59d,
-                FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.CENTAURO, "SVMR",
+                168.59d, FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Volkswagen Touran", SuppliersEnum.CENTAURO, "IVMR", 74.42d,
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Volkswagen Touran Diesel", SuppliersEnum.CENTAURO, "IVMD", 82.8d,
@@ -206,10 +206,10 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Volkswagen Golf", SuppliersEnum.GOLDCAR, "CDMR", 49.58d,
                 FuelPolicy.FULLFULL));
-        CARS.add(new CarResultTO("BMW 4 Series Convertible", SuppliersEnum.MARBESOL, "RTAV", 189.85d,
-                FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("Renault Megane Convertible", SuppliersEnum.MARBESOL, "CTMR", 59.22d,
-                FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("BMW 4 Series Convertible", SuppliersEnum.MARBESOL, "RTAV",
+                189.85d, FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("Renault Megane Convertible", SuppliersEnum.MARBESOL, "CTMR",
+                59.22d, FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Citroen Berlingo", SuppliersEnum.MARBESOL, "CMMV", 10.53d,
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Focus Estate", SuppliersEnum.MARBESOL, "CWMR", 16.11d,
@@ -218,8 +218,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Renault Clio Estate", SuppliersEnum.MARBESOL, "EWMR", 10.93d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.MARBESOL, "SVMR", 108.04d,
-                FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.MARBESOL, "SVMR",
+                108.04d, FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Volkswagen Polo", SuppliersEnum.MARBESOL, "EDMM", 4.8d,
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Galaxy", SuppliersEnum.MARBESOL, "FVMR", 45.07d,
@@ -252,10 +252,10 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Mercedes Citan", SuppliersEnum.MARBESOL, "CMMD", 10.53d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("BMW 4 Series Convertible", SuppliersEnum.MARBESOL, "RTAV", 189.85d,
-                FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("Renault Megane Convertible", SuppliersEnum.MARBESOL, "CTMR", 59.22d,
-                FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("BMW 4 Series Convertible", SuppliersEnum.MARBESOL, "RTAV",
+                189.85d, FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("Renault Megane Convertible", SuppliersEnum.MARBESOL, "CTMR",
+                59.22d, FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Citroen Berlingo", SuppliersEnum.MARBESOL, "CMMV", 10.53d,
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Focus Estate", SuppliersEnum.MARBESOL, "CWMR", 16.11d,
@@ -264,8 +264,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Renault Clio Estate", SuppliersEnum.MARBESOL, "EWMR", 10.93d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.MARBESOL, "SVMR", 108.04d,
-                FuelPolicy.FULLEMPTY));
+        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.MARBESOL, "SVMR",
+                108.04d, FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Volkswagen Polo", SuppliersEnum.MARBESOL, "EDMM", 4.8d,
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Galaxy", SuppliersEnum.MARBESOL, "FVMR", 45.07d,
@@ -298,8 +298,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Mercedes Citan", SuppliersEnum.MARBESOL, "CMMD", 10.53d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(new CarResultTO("BMW 4 Series Convertible", SuppliersEnum.MARBESOL, "RTAV", 516.52d,
-                FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("BMW 4 Series Convertible", SuppliersEnum.MARBESOL, "RTAV",
+                516.52d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Renault Megane Convertible", SuppliersEnum.MARBESOL, "CTMR",
                 204.47d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Citroen Berlingo", SuppliersEnum.MARBESOL, "CMMV", 78.06d,
@@ -310,8 +310,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Renault Clio Estate", SuppliersEnum.MARBESOL, "EWMR", 82.37d,
                 FuelPolicy.FULLFULL));
-        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.MARBESOL, "SVMR", 231.59d,
-                FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("Mercedes Vito Traveliner", SuppliersEnum.MARBESOL, "SVMR",
+                231.59d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Volkswagen Polo", SuppliersEnum.MARBESOL, "EDMM", 70.89d,
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Ford Galaxy", SuppliersEnum.MARBESOL, "FVMR", 213.53d,
@@ -320,8 +320,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Volkswagen Touran", SuppliersEnum.MARBESOL, "IVMR", 168.28d,
                 FuelPolicy.FULLFULL));
-        CARS.add(new CarResultTO("Volkswagen Passat Diesel", SuppliersEnum.MARBESOL, "IDAD", 127.59d,
-                FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("Volkswagen Passat Diesel", SuppliersEnum.MARBESOL, "IDAD",
+                127.59d, FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Volkswagen Golf Diesel", SuppliersEnum.MARBESOL, "CDMD", 76.94d,
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Toyota Yaris", SuppliersEnum.MARBESOL, "EDAR", 91.44d,
@@ -370,8 +370,8 @@ public abstract class AssessmentFiller {
                 FuelPolicy.FULLEMPTY));
         CARS.add(new CarResultTO("Ford Galaxy", SuppliersEnum.RECORD, "FVAR", 160.75d,
                 FuelPolicy.FULLEMPTY));
-        CARS.add(
-                new CarResultTO("Audi A3", SuppliersEnum.SIXT, "ICMR", 186.37d, FuelPolicy.FULLFULL));
+        CARS.add(new CarResultTO("Audi A3", SuppliersEnum.SIXT, "ICMR", 186.37d,
+                FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("BMW 2 Series Active Tourer", SuppliersEnum.SIXT, "JDAR", 239.18d,
                 FuelPolicy.FULLFULL));
         CARS.add(new CarResultTO("Ford Focus Estate", SuppliersEnum.SIXT, "CWMR", 222.56d,

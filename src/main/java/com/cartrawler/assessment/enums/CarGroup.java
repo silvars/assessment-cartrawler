@@ -23,6 +23,6 @@ public enum CarGroup {
             }
         }
 
-        return null;
+        return OTHER;
     }
 }

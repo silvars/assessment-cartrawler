@@ -3,6 +3,7 @@ package com.cartrawler.assessment.tests;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.junit.Test;
 
 import com.cartrawler.assessment.enums.SupplierType;
 import com.cartrawler.assessment.enums.SuppliersEnum;
@@ -26,7 +27,7 @@ public class AssessmentTests extends TestCase {
         assessmentFilter = new AssessmentFilterImpl();
     }
 
-
+    @Test
     public void testSuccessAllAvaibleCarsWithNoFilter() {
 
         log.info("\n\nINI: testSuccessAllAvaibleCarsWithNoFilter\n\n");
@@ -44,7 +45,7 @@ public class AssessmentTests extends TestCase {
     }
 
 
-
+    @Test
     public void testSuccessRemoveAnyDuplicatesFromList() {
 
         log.info("INI: testSuccessRemoveAnyDuplicatesFromList\n\n");
@@ -58,6 +59,7 @@ public class AssessmentTests extends TestCase {
 
     }
 
+    @Test
     public void testSuccessSortCorporateCars() {
 
         log.info("\n\nINI: testSuccessSortCorporateCars\n\n");
@@ -72,7 +74,7 @@ public class AssessmentTests extends TestCase {
 
     }
 
-
+    @Test
     public void testSuccessSortCarTypes() {
 
         log.info("\n\nINI: testSuccessSortCarTypes\n\n");
@@ -106,7 +108,7 @@ public class AssessmentTests extends TestCase {
 
     }
 
-
+    @Test
     public void testSuccessCarsSortedLowToHighPriceByType() {
 
         log.info("\n\nINI: testSuccessCarsSortedLowToHighPriceByType\n\n");
@@ -135,27 +137,20 @@ public class AssessmentTests extends TestCase {
         log.info("\n\nEND: testSuccessCarsSortedLowToHighPriceByType\n\n");
 
     }
-    
-    
-    
 
+    @Test
     public void testSuccessBelowAverageCost() {
 
         log.info("\n\nINI: testSuccessRemovePricedAbove\n\n");
-        
-        log.info("\n\nEXE: CORPORATE AND NON-CORPORATE \n\n");
-        List<CarResultTO> both =
-                assessmentFilter.getCarsBelowAverageCost(SupplierType.BOTH);
+
+        assertTrue(assessmentFilter.getCarsBelowAverageCost(SupplierType.BOTH)
+                .size() < assessmentFilter.getCarsSortedLowToHighPriceByType(SupplierType.BOTH)
+                        .size());
 
         log.info("\n\nEND: testSuccessRemovePricedAbove\n\n");
 
     }
-    
-    
-    
-    
-    
-    
+
 
 
 }

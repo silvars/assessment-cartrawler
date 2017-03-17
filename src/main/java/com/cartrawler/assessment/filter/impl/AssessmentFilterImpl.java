@@ -77,10 +77,9 @@ public class AssessmentFilterImpl extends AssessmentFiller implements Assessment
                 this.getAllCars().stream().collect(Collectors.groupingBy(CarResultTO::getCarGroup,
                         Collectors.averagingDouble(CarResultTO::getRentalCost)));
 
-
         // filtering above avarage
         return this.getCarsSortedLowToHighPriceByType(supplierType).stream()
-                .filter(c -> c.getRentalCost() > avarageCostByGroup.get(c.getCarGroup()))
+                .filter(c -> c.getRentalCost() < avarageCostByGroup.get(c.getCarGroup()))
                 .collect(Collectors.toList());
     }
 
