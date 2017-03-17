@@ -40,13 +40,13 @@ public class AssessmentFilterImpl extends AssessmentFiller implements Assessment
 
         if (SupplierType.COPORATE.equals(supplierType)) {
 
-            cars = this.getCarsCorporateSorted().stream().filter(
+            cars = this.getCarsCorporateSorted().parallelStream().filter(
                     car -> SuppliersEnum.CORPORATE_CAR_SUPPLIERS.contains(car.getSupplierName()))
                     .collect(Collectors.toList());
         }
 
         else if (SupplierType.NON_CORPORATE.equals(supplierType)) {
-            cars = this.getCarsCorporateSorted().stream().filter(
+            cars = this.getCarsCorporateSorted().parallelStream().filter(
                     car -> !SuppliersEnum.CORPORATE_CAR_SUPPLIERS.contains(car.getSupplierName()))
                     .collect(Collectors.toList());
         } else {
@@ -74,11 +74,11 @@ public class AssessmentFilterImpl extends AssessmentFiller implements Assessment
 
         // calculating avarage using all cars with lambda
         Map<CarGroup, Double> avarageCostByGroup =
-                this.getAllCars().stream().collect(Collectors.groupingBy(CarResultTO::getCarGroup,
+                this.getAllCars().parallelStream().collect(Collectors.groupingBy(CarResultTO::getCarGroup,
                         Collectors.averagingDouble(CarResultTO::getRentalCost)));
 
         // filtering above avarage
-        return this.getCarsSortedLowToHighPriceByType(supplierType).stream()
+        return this.getCarsSortedLowToHighPriceByType(supplierType).parallelStream()
                 .filter(c -> c.getRentalCost() < avarageCostByGroup.get(c.getCarGroup()))
                 .collect(Collectors.toList());
     }
